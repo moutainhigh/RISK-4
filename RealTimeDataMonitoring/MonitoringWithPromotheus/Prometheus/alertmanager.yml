@@ -1,0 +1,26 @@
+global:
+  # Slack
+  slack_api_url: "https://hooks.slack.com/services/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"
+  # Outlook
+  smtp_smarthost: 'SMTP.gmail.com:465'
+  smtp_from: 'data.realtime.monitor@gmail.com'
+  smtp_auth_username: 'data.realtime.monitor@gmail.com'
+  smtp_auth_password: 'datarealtimemonitor123'
+  smtp_require_tls: false
+route:
+  group_by: ['severity']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 5m
+  routes:
+  - match:
+      severity: warning
+  receiver: 'default'
+receivers:
+- name: 'default'
+  email_configs:
+  - to: 'lecongpr98@gmail.com'
+  slack_configs:
+  - channel: "#test"
+    title: "Monitor details"
+    text: "{{ range .Alerts }}{{ .Annotations.description }}\n{{ end }}"

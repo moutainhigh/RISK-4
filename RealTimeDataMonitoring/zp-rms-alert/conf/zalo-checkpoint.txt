@@ -1,0 +1,84 @@
+{
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772791544,
+   "zaloID": 925212024663255000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": false,
+   "time": 1577772794801,
+   "zaloID": 7821481921662620000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772794058,
+   "zaloID": 7163376505243600000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772793684,
+   "zaloID": 6029991249623650000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772794222,
+   "zaloID": 5623663853597960000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772796316,
+   "zaloID": 8161646787029120000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772796569,
+   "zaloID": 6304848087268550000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": false,
+   "time": 1577772796186,
+   "zaloID": 496803995051234000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772796396,
+   "zaloID": 6029991249623650000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772796485,
+   "zaloID": 3951408919647880000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": true,
+   "time": 1577772799033,
+   "zaloID": 356922487227418000
+ };
+ {
+   "campaignID": "ZPI_200110_353",
+   "errorMessage": "",
+   "isA30": false,
+   "time": 1577772801262,
+   "zaloID": 7821481921662620000
+ }

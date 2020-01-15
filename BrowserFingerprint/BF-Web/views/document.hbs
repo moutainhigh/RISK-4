@@ -1,0 +1,761 @@
+<div class="container">
+    <div class="header-box">
+        <div class="header-title">BROWSER FINGERPRINT DOCUMENT</div>
+        <div class="header-links">
+            <div class="header-links-title">Homepage</div>
+            <a href="/" class="header-links-content"
+                title="Go to document page to know more information about Browser Fingerprint Detection">Back to
+                homepage</a>
+        </div>
+        <div class="header-body">
+            <div class="header-body-title">Developed By</div>
+            <div class="header-body-content">Lê Thành Công - D3M Zalopay Fresher</div>
+            <div class="header-body-content">Trần Kiến Quốc - D3M Zalopay Fresher</div>
+        </div>
+    </div>
+    <table border="1" id="table-doc">
+        <tr>
+            <!-- 
+                -------------------------
+                Left side bar 
+                -------------------------
+            -->
+            <td id="table-leftsidebar">
+                <div class="td-scrollable">
+                    <div class="TOC-body">
+                        <div class="TOC-title">Table Of Contents</div>
+                        <div class="TOC-detail">
+                            <div>
+                                <a href="#ImportantInformation" class="numbering">1. Important Information</a>
+                                    <a href="#UserAgent" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        User Agent
+                                    </a>
+                                    <a href="#DeviceBrand" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Device Brand
+                                    </a>
+                                    <a href="#DeviceModel" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Device Model
+                                    </a>
+                                    <a href="#DeviceType" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Device Type
+                                    </a>
+                                    <a href="#OSName" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        OS Name
+                                    </a>
+                                    <a href="#OSVersion" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        OS Version
+                                    </a>
+                                    <a href="#ClientName" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Client Name
+                                    </a>
+                                    <a href="#ClientVersion" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Client Version
+                                    </a>
+                                    <a href="#DeviceLanguage" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Device Language
+                                    </a>
+                                    <a href="#DeviceRTCInfo" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Device RTC Info
+                                    </a>
+                                    <a href="#IPAddress" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        IP Address
+                                    </a>
+                                    <a href="#CountryCode" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Country Code
+                                    </a>
+                                    <a href="#ContinentCode" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Continent Code
+                                    </a>
+                                    <a href="#Latitude" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Latitude
+                                    </a>
+                                    <a href="#Longitude" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Longitude
+                                    </a>
+                                    <a href="#HTTPAccept" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        HTTP Accept
+                                    </a>
+                                    <a href="#HTTPAcceptEncoding" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        HTTP Accept Encoding
+                                    </a>
+                                    <a href="#HTTPAcceptLanguage" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        HTTP Accept Language
+                                    </a>
+                                    <a href="#TouchCompability" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Touch Compability
+                                    </a>
+                                    <a href="#WebGL" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        WebGL
+                                    </a>
+                                    <a href="#VendorWebGL" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Vendor WebGL
+                                    </a>
+                                    <a href="#RendererWebGL" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Renderer WeBGL
+                                    </a>
+                                    <a href="#ScreenResolution" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Screen Resolution
+                                    </a>
+                                    <a href="#ColorDepth" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Color depth
+                                    </a>
+                                    <a href="#TimeZone" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Time Zone
+                                    </a>
+                                    <a href="#CPUVirtualCores" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        CPU Virtual Cores
+                                    </a>
+                                    <a href="#FontList" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Font List
+                                    </a>
+                                    <a href="#WebGLFingerprint" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        WebGL Fingerprint
+                                    </a>
+                                    <a href="#CanvasFingerprint" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Canvas Fingerprint
+                                    </a>
+                                    <a href="#AudioHashFingerprint" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Audio Hash Fingerprint
+                                    </a>
+                                    <a href="#SensorOrientation" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Sensor orientation
+                                    </a>
+                                <a href="#FuzzySearch" class="numbering">2. Fuzzy Search</a>
+                                    <a href="#FuzzballModule" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Fuzzball Module
+                                    </a>
+                                <a href="#HowCanWeDo" class="numbering">3. How Can We Do?</a>
+                                    <a href="#ClientInformation" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Client Information
+                                    </a>
+                                    <a href="#DataModel" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Data Model
+                                    </a>
+                                    <a href="#SystemArchitecture" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        System Architecture
+                                    </a>
+                                    <a href="#InfoCollect" class="bullet">
+                                        <i class="fa fa-circle" id="bullet-circle"></i>
+                                        Information collect
+                                    </a>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+            <!--
+                ------------------------- 
+                Right side bar 
+                -------------------------
+            -->
+            <td id="table-rightsidebar">
+                <div class="td-scrollable">
+                    <!-- 
+                        IMPORTANT INFORMATION
+                    -->
+                    <div class="doc-box">
+                        <div class="doc-numbering" id="ImportantInformation">
+                            1. Important Information (Zalo browser context)
+                        </div>
+                        <div class="doc-bullet" id="UserAgent">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                User Agent (UA)
+                            </div>
+                            <div class="doc-content">
+                                - Is information combination of browser, version browser, system information, etc. </br>
+                                - Can be changed if user updates browser version, OS; or has new browser; or using
+                                browser inside applications, etc. </br>
+                                - Structure: <b>User-Agent: Mozilla/&ltversion&gt (&ltsystem-information&gt)
+                                    &ltplatform&gt (&ltplatform-details&gt) &ltextensions&gt</b>. </br>
+                                - Example UA of Google Chrome: <b>Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36
+                                    (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</b>. </br>
+                                - Information can be retrieved from User Agent: Device Brand, Device Model, Device Type, OS Name, OS Version, Client Name, Client Version.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="DeviceBrand">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Device Brand
+                            </div>
+                            <div class="doc-content">
+                                - Is gotten from User Agent information. </br>
+                                - Is information about device brand. </br>
+                                - Can be changed if device is rooted.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="DeviceModel">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Device Model
+                            </div>
+                            <div class="doc-content">
+                                - Is gotten from User Agent information. </br>
+                                - Is device model, such as Xperia Z1, Samsung Galaxy Note 10, etc. </br>
+                                - Information is mapped from hardware to files on the device. </br>
+                                - Can be changed if device is rooted.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="DeviceType">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Device Type
+                            </div>
+                            <div class="doc-content">
+                                - Is gotten from User Agent information. </br>
+                                - Is type of device, such as tablet, smartphone, phablet, etc. </br>
+                                - Can not be changed.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="OSName">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Operating System (OS) Name
+                            </div>
+                            <div class="doc-content">
+                                - Is gotten from User Agent information. </br>
+                                - Is type of operating system of device, such as Android, iOS. </br>
+                                - Can not be changed.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="OSVersion">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Operating System (OS) Version
+                            </div>
+                            <div class="doc-content">
+                                - Is gotten from User Agent information. </br>
+                                - Is current OS version of device. </br>
+                                - Can be changed if device is rooted or updated by different versions from
+                                manufacturer.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="ClientName">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Client Name
+                            </div>
+                            <div class="doc-content">
+                                - Is gotten from User Agent information. </br>
+                                - Is type of browser, such as Chrome Mobile, Chrome (Web), Microsoft Edge, etc. </br>
+                                - Can be changed if user uses other browser types.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="ClientVersion">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Client Version
+                            </div>
+                            <div class="doc-content">
+                                - Is gotten from User Agent information. </br>
+                                - Is browser version. </br>
+                                - Can be changed if user updates browser.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="DeviceLanguage">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Device Language
+                            </div>
+                            <div class="doc-content">
+                                - Determines current used languages of the device. </br>
+                                - Can be changed by manually.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="DeviceRTCInfo">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Device RTC Info
+                            </div>
+                            <div class="doc-content">
+                                - Shows number of Real-Time Communication devices such as: speakers, microphones,
+                                cameras. <br>
+                                - DetectRTC is a tiny JavaScript library that can be used to detect WebRTC features.
+                                <br>
+                                - Cannot be changed.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="IPAddress">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                IP Address
+                            </div>
+                            <div class="doc-content">
+                                - Indicates where on the Internet the traffics originates. </br>
+                                - Tends to be very broad and very changeable. <br>
+                                - Links to some information such as: organization name, carrier code, connection type,
+                                IP country,
+                                geographical coordinates for specific connection. <br>
+                                - We use ipdata.co as a service to get location from IP address. <br>
+                                - Can be obscured by using proxies, VPNs, botnets.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="CountryCode">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Country Code
+                            </div>
+                            <div class="doc-content">
+                                - Country codes are short alphabetic or numeric geographical codes (geocodes) developed
+                                to represent countries and dependent areas, for use in data processing and
+                                communications. <br>
+                                - An Internet top-level domain assigned to a country. A country code is a two-letter
+                                suffix such as .us (United States), .ca (Canada) and .de (Germany).
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="ContinentCode">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Continent Code
+                            </div>
+                            <div class="doc-content">
+                                - The same as country codes but represent continent name such as EU (Europe), AS (Asia), etc. <br>
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="Latitude">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Latitude
+                            </div>
+                            <div class="doc-content">
+                                - Horizontal mapping lines on Earth are lines of latitude. They are known as "parallels"
+                                of latitude, because they run parallel to the equator.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="Longitude">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Longitude
+                            </div>
+                            <div class="doc-content">
+                                - Vertical mapping lines on Earth are lines of longitude, known as "meridians". One
+                                simple way to visualize this might be to think about having hula hoops cut in half,
+                                vertically positioned with one end at the North Pole and the other at the South Pole.
+
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="HTTPAccept">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                HTTP Accept
+                            </div>
+                            <div class="doc-content">
+                                - The Accept request HTTP header advertises which content types, expressed as MIME types
+                                (Multipurpose Internet Mail Extensions such as text/plain), the client is able to
+                                understand. <br>
+
+                                - Example: <br>
+                                Accept: MIME_type/MIME_subtype <br>
+                                Accept: MIME_type/* <br>
+                                Accept: */* <br>
+
+                                Accept: text/html, application/xhtml+xml, application/xml;q=0.9, image/webp,
+                                */*;q=0.8 <br>
+
+                                - Directives: <br>
+                                MIME_type/MIME_subtype
+                                : A single, precise MIME type, like text/html.
+                                <br>
+                                MIME_type/*
+                                : A MIME type, but without any subtype. image/* will match image/png,
+                                image/svg, image/gif and any other image types.
+                                <br>
+                                */*
+                                : Any MIME type <br>
+
+                                ;q= (q-factor weighting)
+                                : Any value used is placed in an order of preference expressed using
+                                relative quality value called the weight.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="HTTPAcceptEncoding">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                HTTP Accept Encoding
+                            </div>
+                            <div class="doc-content">
+                                - Informs the server about the encoding algorithm, usually a compression algorithm, that
+                                can be used on the resource sent back.
+                                <br>
+                                - Example:
+                                <br>
+                                Accept-Encoding: deflate, gzip;q=1.0, *;q=0.5
+                                <br>
+                                - Directives: <br>
+                                gzip - A compression format using the Lempel-Ziv coding (LZ77), with a 32-bit CRC. <br>
+
+                                compress - A compression format using the Lempel-Ziv-Welch (LZW) algorithm. <br>
+
+                                deflate - A compression format using the zlib structure, with the deflate compression
+                                algorithm. <br>
+
+                                br - A compression format using the Brotli algorithm. <br>
+
+                                identity - Indicates the identity function (i.e. no compression, nor modification). This
+                                value is always considered as acceptable, even if not present.
+                                <br>
+                                * - Matches any content encoding not already listed in the header. This is the default
+                                value if the header is not present. It doesn't mean that any algorithm is supported;
+                                merely that no preference is expressed. <br>
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="HTTPAcceptLanguage">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                HTTP Accept Language
+                            </div>
+                            <div class="doc-content">
+                                - Informs the server about the language the server is expected to send back. Browsers
+                                set adequate values for this header according to their user interface language and even
+                                if a user can change it, this happens rarely
+                                <br>
+                                - Example: <br>
+                                Accept-Language: fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5 <br>
+                                - Directives: <br>
+
+                                A language tag (which is sometimes referred to as a "locale identifier"). This consists
+                                of a 2-3 letter base language tag representing the language, optionally followed by
+                                additional subtags separated by '-'. The most common extra information is the country or
+                                region variant (like 'en-US' or 'fr-CA') or the type of alphabet to use (like
+                                'sr-Latn'). Other variants like the type of orthography ('de-DE-1996') are usually not
+                                used in the context of this header.
+
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="TouchCompability">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Touch Compability
+                            </div>
+                            <div class="doc-content">
+                                - Use the maxTouchPoints read-only property of the Navigator interface returns the
+                                maximum number of simultaneous touch contact points are supported by the current device.
+                                <br>
+                                - Can not change. <br>
+                                
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="WebGL">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Web Graphics Library (WebGL)
+                            </div>
+                            <div class="doc-content">
+                                - Is a JavaScript API library (defined by the Khronos Group) for rendering interactive
+                                2D and 3D graphics within any compatible web browser without the use of plugins. </br>
+                                - It consists of control code written in JavaScript and special effects code that is
+                                executed on a computer's GPU. </br>
+                                - Newest current version is WebGL2 which based on OpenGL ES 3.0.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="VendorWebGL">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Vendor WebGL
+                            </div>
+                            <div class="doc-content">
+                                - Display vendor information of GPU hardware for WebGL, such as Qualcomm, Google Inc,
+                                Microsoft, etc. </br>
+                                - Can be changed if device is rooted and has tools to fake information.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="RendererWebGL">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Renderer WebGL
+                            </div>
+                            <div class="doc-content">
+                                - Is name of GPU hardware inside device. </br>
+                                - Can be changed if device is rooted and has tools to fake information.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="ScreenResolution">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Screen Resolution
+                            </div>
+                            <div class="doc-content">
+                                - Reveals current screen resolution of device. </br>
+                                - It depends on hardware, but can be changed manually through software.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="ColorDepth">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Color Depth
+                            </div>
+                            <div class="doc-content">
+                                - Is the number of bits used for each color component of a single pixel. </br>
+                                - Although it depends on hardware, but it can be still changed after device is rooted.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="TimeZone">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Time Zone
+                            </div>
+                            <div class="doc-content">
+                                - Is a region of the globe that observes a uniform standard time for legal, commercial,
+                                and social purposes. </br>
+                                - It helps determine where the device is. </br>
+                                - Can be changed by manually.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="CPUVirtualCores">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                CPU Virtual Cores
+                            </div>
+                            <div class="doc-content">
+                                - Is the core number can be obtained by a new browser feature called
+                                hardwareConcurrency. <br>
+                                - Provides the capability information for Web Workers. <br>
+                                - Cannot be changed.
+                            </div>
+                        </div>
+
+                        <div class="doc-bullet" id="FontList">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Font List
+                            </div>
+                            <div class="doc-content">
+                                - List of fonts a user's browser can display. <br>
+                                - Can be changed by manually.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="WebGLFingerprint">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                WebGL Fingerprint
+                            </div>
+                            <div class="doc-content">
+                                - WebGL is a JavaScript browser API for rendering 3D images on web pages. <br>
+                                - The same hardware, drivers, and operating system will have the same fingerprint. <br>
+                                - WebGL rendering is a combination of software and hardware in which the hardware
+                                contributes more than the software.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="CanvasFingerprint">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Canvas Fingerprint
+                            </div>
+                            <div class="doc-content">
+                                - Canvas is an HTML5 API for drawing 2D images and animations on web pages. <br>
+                                - Uses a command browser to draw a hidden Canvas image to achieve fingerprint
+                                recognition. <br>
+                                - Are slightly different on different machines. <br>
+                                - Depends on both hardware and software.
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="AudioHashFingerprint">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Audio Hash Fingerprint
+                            </div>
+                            <div class="doc-content">
+                                - Is a hash-derived value of the device's audio stack. <br>
+                                - Based on your audio settings and hardware, the website requires your browser to
+                                simulate the way audio files are played as a sine function. <br>
+                                - This sine function is converted to a hash function and sent to the server as an
+                                additional entropy in browser fingerprinting. <br>
+                                - Depends on both hardware and software.
+                            </div>
+                        </div>
+
+                        <div class="doc-bullet" id="SensorOrientation">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Sensor orientation
+                            </div>
+                            <div class="doc-content">
+                                -   Is the information on the orientation of the device of client when user accesses website. <br>
+                                -   This information can help to notify that a lot of devices or bots are used to commit fraud when they have the same orientation information [X, Y, Z, W]. <br>
+                                - The elements of the list are equal to components of a unit quaternion [QUATERNIONS] [Vx * sin(θ/2), Vy * sin(θ/2), Vz * sin(θ/2), cos(θ/2)] where V is the unit vector (whose elements are Vx, Vy, and Vz) representing the axis of rotation, and θ is the rotation angle about the axis defined by the unit vector V.
+
+                            </div>
+                        </div>
+
+                        {{!-- To be continued of BULLET --}}
+
+                    </div>
+
+                    <!-- 
+                        FUZZY SEARCH 
+                    -->
+                    <div class="doc-box">
+                        <div class="doc-numbering" id="FuzzySearch">
+                            2. Fuzzy search
+                        </div>
+                        <div class="doc-bullet" id="FuzzballModule">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Analysing "Fuzzball Module" In NodeJS
+                            </div>
+                            <div class="doc-content">
+                                <b>Definition & distance formula</b>:<br>
+                                The fuzzy string matching works on the principle of edit distance, particularly
+                                Levenshtein distance - a way of quantifying how dissimilar two strings are to one
+                                another.<br><br>
+
+                                For example, the Levenshtein distance between "kitten" and "sitting" is 3, since the
+                                following three edits change one into the other, and there is no way to do it with fewer
+                                than three edits: <br>
+
+                                - kitten → sitten (substitution of "s" for "k") <br>
+                                - sitten → sittin (substitution of "i" for "e") <br>
+                                - sittin → sitting (insertion of "g" at the end). <br>
+                                <br>
+
+                                <b>How to define ratio/similarity</b>: <br>
+
+                                "NEW YORK METS" <br>
+                                "NEW YORK MEATS" <br>
+                                => 96% similar, this similarity between two strings here called "fuzz ratio". <br>
+
+                                The ratio is calculated by using the 'difflib.ratio', which will: <br>
+                                - Return a measure of the sequences' similarity (float in [0,1]). <br>
+                                - Where T is the total number of elements in both sequences, and M is the number of
+                                matches, this is <i>2.0*M/T</i>. Here is 2.0 *13/27 = 0.9629. <br>
+
+                                Another expression: <i>ratio = ((str1.length + str2.length) - distance) / (str1.length +
+                                    str2.length)</i> <br><br>
+
+                                <b>fuzz.ratio</b>: Simple. Just calls difflib.ratio on the two input strings<br>
+                                Example: fuzz.ratio("NEW YORK METS", "NEW YORK MEATS") => 96 <br><br>
+
+                                <b>fuzz.partial_ratio</b>: Attempts to account for partial string matches better. Calls
+                                ratio using the shortest string (length n) against all n-length substrings of the larger
+                                string and returns the highest score. <br>
+                                Example: <br>
+                                - fuzz.ratio("YANKEES", "NEW YORK YANKEES") => 60 <br>
+                                - fuzz.partial_ratio("YANKEES", "NEW YORK YANKEES") => 100 <br><br>
+
+                                <b>fuzz.token_sort_ratio</b>: Attempts to account for similar strings out of order.
+                                Calls ratio on both strings after sorting the tokens in each string<br>
+                                Example: <br - fuzz.ratio("New York Mets vs Atlanta
+                                    Braves", "Atlanta Braves vs New York Mets" )=> 45 <br>
+                                - fuzz.partial_ratio("New York Mets vs Atlanta Braves", "Atlanta Braves vs New York
+                                Mets") => 45 <br>
+                                - fuzz.token_sort_ratio("New York Mets vs Atlanta Braves", "Atlanta Braves vs New York
+                                Mets") => 100 <br><br>
+
+                                <b>fuzz.token_set_ratio</b>: Attempts to rule out differences in the strings. Calls
+                                ratio on three particular substring sets and returns the max:<br>
+                                <i>1. Intersection-only and the intersection with remainder of string one. </i><br>
+                                <i>2. Intersection-only and the intersection with remainder of string two. </i><br>
+                                <i>3. Intersection with remainder of one and intersection with remainder of two.
+                                </i><br>
+                                Example:<br>
+                                - fuzz.ratio("mariners vs angels", "los angeles angels of anaheim at seattle mariners")
+                                => 36 <br>
+                                - fuzz.partial_ratio("mariners vs angels", "los angeles angels of anaheim at seattle
+                                mariners") => 61 <br>
+                                - fuzz.token_sort_ratio("mariners vs angels", "los angeles angels of anaheim at seattle
+                                mariners") => 51 <br>
+                                - fuzz.token_set_ratio("mariners vs angels", "los angeles angels of anaheim at seattle
+                                mariners") => 91 <br><br>
+
+                                <b>Link for installing</b>: <a href="https://www.npmjs.com/package/fuzzball">Fuzzball</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                        HOW CAN WE DO?
+                    -->
+                    <div class="doc-box">
+                        <div class="doc-numbering" id="HowCanWeDo">
+                            3. How can we do?
+                        </div>
+                        <div class="doc-bullet" id="ClientInformation">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Client Information
+                            </div>
+                            <div class="doc-content">
+                                <img src="./images/client-info.png" class="responsive" alt="Img-client-info">
+                                <br><br>
+                                <i>Notes: Browser fingerprint will be created by using UUID and sent from server to client. Then, it's stored in local storage of browser for serving another subsequent access.</i>
+                            </div>
+                            <div class="doc-content">
+                                <img src="./images/venn.png" class="responsive" alt="Img-venn-info">
+                                <br><br>
+                                <i>Notes: This is Venn diagram to show the dependence of client information on other properties.</i>
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="DataModel">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Data Model
+                            </div>
+                            <div class="doc-content">
+                                 <img src="./images/data-model.png" class="responsive" alt="Img-data-model-info">
+                            </div>
+                        </div>
+                        <div class="doc-bullet" id="SystemArchitecture">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                System Architecture
+                            </div>
+                            <div class="doc-content">
+                                <img src="./images/system.png" class="responsive" alt="Img-system-info">
+                            </div>
+                        </div>
+
+                         <div class="doc-bullet" id="InfoCollect">
+                            <div class="doc-title">
+                                <i class="fa fa-circle" id="bullet-circle"></i>
+                                Important information to collect
+                            </div>
+                            <div class="doc-content">
+                                <img src="./images/important-info.png" class="responsive" alt="Img-important-info">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {{!-- NUMBERING --}}
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

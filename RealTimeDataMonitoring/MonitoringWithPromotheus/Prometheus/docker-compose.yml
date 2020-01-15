@@ -1,0 +1,39 @@
+version: '3.1'
+services:
+  alertmanager:
+    image: prom/alertmanager
+    volumes:
+      - ./alertmanager.yml:/prometheus/alertmanager.yml
+    command:
+      - '--config.file=/prometheus/alertmanager.yml'
+    ports:
+      - 9093:9093
+    network_mode: host
+
+  prometheus:
+    network_mode: host
+    ports:
+      - 9090:9090
+    image: prom/prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.rules.yml:/etc/prometheus/prometheus.rules.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=60d'
+    depends_on: 
+      - alertmanager
+
+  grafana:
+    network_mode: host
+    image: grafana/grafana:latest
+    user: "1000"
+    volumes:
+      - ./grafana.ini:/usr/share/grafana/conf/defaults.ini
+      - grafana-storage:/var/lib/grafana
+    ports:
+      - 3000:3000
+
+volumes:
+  grafana-storage:

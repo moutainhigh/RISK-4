@@ -1,0 +1,27 @@
+{
+  "name": "devicefingerprint",
+  "version": "1.0.0",
+  "description": "A project about detecting device by its fingerprint",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Le Thanh Cong - Tran Kien Quoc",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "clientjs": "^0.1.11",
+    "detectrtc": "^1.3.9",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "fingerprintjs2": "^2.1.0",
+    "node-device-detector": "^1.1.8",
+    "fuzzball": "^1.3.0",
+    "heroku-ssl-redirect": "0.0.4",
+    "mongodb": "^3.3.2",
+    "nodemon": "^1.19.2",
+    "redis": "^2.8.0",
+    "uuid": "^3.3.3"
+  }
+}

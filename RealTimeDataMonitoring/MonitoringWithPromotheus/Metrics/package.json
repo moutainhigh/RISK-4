@@ -1,0 +1,17 @@
+{
+  "name": "metrics",
+  "version": "1.0.0",
+  "description": "Consuming datas from kafka, processing data, creating appropriate metrics and sending them to prothemeus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lê Thành Công - Trần Kiến Quốc",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "node-iplocate": "^1.0.1",
+    "prom-client": "^11.5.3"
+  }
+}

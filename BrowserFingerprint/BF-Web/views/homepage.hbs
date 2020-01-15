@@ -1,0 +1,206 @@
+<!-- 
+    Some "id" is used for updating its content/value:
+    + HH-content
+    + HI-content
+    + PF-content
+    + EI-content
+    + FI-content
+    + BF-fingerprint
+    + AN-announcement
+-->
+
+<!-- The design of website -->
+<div class="container">
+    <div class="header-box">
+        <div class="header-title">BROWSER FINGERPRINT DETECTION</div>
+        <div class="header-links">
+            <div class="header-links-title">Important Things</div>
+            {{!-- <a href="/d3m-bf-doc" class="header-links-content" title="Go to document page to know more information about Browser Fingerprint Detection">BF Document</a> --}}
+            <a href="#HH-title" class="header-links-content" title="Displaying information of HTTP headers">HTTP Headers</a>
+            <a href="#HI-title" class="header-links-content" title="Displaying hardware information of device">Hardware Information</a>
+            <a href="#PF-title" class="header-links-content" title="Displaying personal features of device">Personal Features</a>
+            <a href="#EI-title" class="header-links-content" title="Displaying environment information of device">Environment Information</a>
+            <a href="#FI-title" class="header-links-content" title="Displaying canvas, webgl and audio fingerprints of device">Fingerprints Information</a>
+            <a href="#BF-title" class="header-links-content" title="Displaying value of browser fingerprint">Browser Fingerprint</a>
+            <a href="#AN-title" class="header-links-content" title="Displaying announcement about status of fingerprint">Announcement</a>
+        </div>
+        <div class="header-body">
+            <div class="header-body-title">Developed By</div>
+            <div class="header-body-content">Lê Thành Công - D3M team, Zalopay@VNG</div>
+            <div class="header-body-content">Trần Kiến Quốc - D3M team, Zalopay@VNG</div>
+        </div>
+    </div>
+    <div class="body-box">
+        <!--
+            Target: Displaying information of HTTP headers
+            Shortcut name for style.css: HH
+        -->
+        <div class="HH-information">
+            <div class="HH-title" id="HH-title">HTTP Headers Information</div>
+            <div class="DisplayTable">
+                <div class="DisplayCell">
+                    <table border="1" class="tableBox">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="HH-content">
+                            <!-- LOOP TO INSERT CONTENTS HERE -->
+
+                            {{#each HHContent}}
+                            <tr>
+                                <td id="{{id}}-field">{{field}}</td>
+                                <td id="{{id}}-value">{{value}}</td>    
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            Target: Displaying hardware information of device
+            Shortcut name for style.css: HI
+        -->
+        <div class="HI-information">
+            <div class="HI-title" id="HI-title">Hardware Information</div>
+            <div class="DisplayTable">
+                <div class="DisplayCell">
+                    <table border="1" class="tableBox">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="HI-content">
+                            <!-- LOOP TO INSERT CONTENTS HERE -->
+
+                            {{!-- {{#each NormalInformation}}
+                            <tr>
+                                <td id="{{id}}-field">{{field}}</td>
+                                <td id="{{id}}-value">{{value}}</td>    
+                            </tr>
+                            {{/each}} --}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            Target: Displaying personal features of device
+            Shortcut name for style.css: PF
+        -->
+        <div class="PF-information">
+            <div class="PF-title" id="PF-title">Personal Features</div>
+            <div class="DisplayTable">
+                <div class="DisplayCell">
+                    <table border="1" class="tableBox">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="PF-content">
+                            <!-- LOOP TO INSERT CONTENTS HERE -->
+
+                            {{!-- {{#each NormalInformation}}
+                            <tr>
+                                <td id="{{id}}-field">{{field}}</td>
+                                <td id="{{id}}-value">{{value}}</td>    
+                            </tr>
+                            {{/each}} --}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            Target: Displaying environment information of user
+            Shortcut name for style.css: EI
+        -->
+        <div class="EI-information">
+            <div class="EI-title" id="EI-title">Environment Information</div>
+            <div class="DisplayTable">
+                <div class="DisplayCell">
+                    <table border="1" class="tableBox">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="EI-content">
+                            <!-- LOOP TO INSERT CONTENTS HERE -->
+
+                            {{!-- {{#each NormalInformation}}
+                            <tr>
+                                <td id="{{id}}-field">{{field}}</td>
+                                <td id="{{id}}-value">{{value}}</td>    
+                            </tr>
+                            {{/each}} --}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            Target: Displaying canvas, webgl and audio fingerprints of device
+            Shortcut name for style.css: FI
+        -->
+        <div class="FI-information">
+            <div class="FI-title" id="FI-title">Fingerprints Information</div>
+            <div class="DisplayTable">
+                <div class="DisplayCell">
+                    <table border="1" class="tableBox">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="FI-content">
+                            <!-- LOOP TO INSERT CONTENTS HERE -->
+
+                            {{!-- {{#each NormalInformation}}
+                            <tr>
+                                <td id="{{id}}-field">{{field}}</td>
+                                <td id="{{id}}-value">{{value}}</td>    
+                            </tr>
+                            {{/each}} --}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Target: Displaying value of browser fingerprint
+            Shortcut name for style.css: BF
+        -->
+        <div class="browser-fingerprint">
+            <div class="BF-title" id="BF-title">Browser Fingerprint</div>
+            <div class="BF-fingerprint" id="BF-fingerprint">
+                Loading...
+            </div>
+        </div>
+
+        <!-- 
+            Target: Displaying announcement about status of fingerprint
+            Shorcut name for style.css: AN
+        -->
+        <div class="announcement">
+            <div class="AN-title" id="AN-title">Announcement</div>
+            <div class="AN-announcement" id="AN-announcement">
+                Loading...
+            </div>
+        </div>
+    </div>
+</div>

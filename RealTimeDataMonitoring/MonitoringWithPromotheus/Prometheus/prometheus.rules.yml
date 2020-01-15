@@ -1,0 +1,24 @@
+groups:
+- name: ./rules.conf
+  rules:
+  - alert: CampaignAmount
+    expr: (gauge_campaignAmount - gauge_campaignAmount offset 10m) > ((gauge_campaignAmount offset 10m - gauge_campaignAmount offset 20m)+(gauge_campaignAmount offset 20m - gauge_campaignAmount offset 30m)+(gauge_campaignAmount offset 30m - gauge_campaignAmount offset 40m)+(gauge_campaignAmount offset 40m - gauge_campaignAmount offset 50m)+(gauge_campaignAmount offset 50m - gauge_campaignAmount offset 60m)+(gauge_campaignAmount offset 60m - gauge_campaignAmount offset 70m))/6
+    labels:
+      severity: warning
+    annotations:
+      description: 'Campaign: {{ $labels.campaignID }} - Discount money/campaign burn out in 10 minutes greater than average of 10 minutes in previous hour'
+      value: '{{ $value }} VND'
+
+  - alert: NumTransOfAllCampaigns
+    expr: (sum(gauge_numTransOfCampaign) - sum(gauge_numTransOfCampaign offset 1h)) >((sum(gauge_numTransOfCampaign offset 168h) - sum(gauge_numTransOfCampaign offset 169h))+(sum(gauge_numTransOfCampaign offset 336h) - sum(gauge_numTransOfCampaign offset 337h))+(sum(gauge_numTransOfCampaign offset 504h) - sum(gauge_numTransOfCampaign offset 505h))+(sum(gauge_numTransOfCampaign offset 672h) - sum(gauge_numTransOfCampaign offset 673h)))/4
+    labels:
+      severity: warning
+    annotations:
+      description: 'Transactions in all campaign greater than average of 4 previous week in same hours'
+      value: '{{ $value }} transactions/hour'
+
+# For grafana
+# alert: CampaignAmount
+# expr: (gauge_campaignAmount - gauge_campaignAmount offset 10m) - ((gauge_campaignAmount offset 10m - gauge_campaignAmount offset 20m)+(gauge_campaignAmount offset 20m - gauge_campaignAmount offset 30m)+(gauge_campaignAmount offset 30m - gauge_campaignAmount offset 40m)+(gauge_campaignAmount offset 40m - gauge_campaignAmount offset 50m)+(gauge_campaignAmount offset 50m - gauge_campaignAmount offset 60m)+(gauge_campaignAmount offset 60m - gauge_campaignAmount offset 70m))/6 > 0
+# alert: NumTransOfAllCampaigns
+# expr: (sum(gauge_numTransOfCampaign) - sum(gauge_numTransOfCampaign offset 1h)) - ((sum(gauge_numTransOfCampaign offset 168h) - sum(gauge_numTransOfCampaign offset 169h))+(sum(gauge_numTransOfCampaign offset 336h) - sum(gauge_numTransOfCampaign offset 337h))+(sum(gauge_numTransOfCampaign offset 504h) - sum(gauge_numTransOfCampaign offset 505h))+(sum(gauge_numTransOfCampaign offset 672h) - sum(gauge_numTransOfCampaign offset 673h)))/4 > 0
